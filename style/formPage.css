@@ -1,0 +1,160 @@
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: linear-gradient(to left, #031739, #032D6B);
+}
+
+/* HEADER DA PAGINA */ 
+
+header {
+    background-color: #3b3b3b;
+    padding: 10px;
+}
+
+header h1 {
+    color: white;
+    font-family: monospace;
+    font-style: italic;
+    letter-spacing: 2px;
+}
+
+/* CONTEINER AREA DE FORMULÁRIO  */
+
+#ConteinerForm {
+    background-color: #104dc0c9;
+    display: block;
+    align-items: center;
+    max-width: 900px;
+    padding: 30px;
+    margin: 7% auto 15% auto;
+}
+
+#formDadosUser {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+#formDadosUser label {
+    display: block;
+    font-size: 20px;
+}
+
+#formDadosUser input {
+    background-color: #fffffff8;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 4px; 
+    margin: 10px 0;
+    transition: all .8s;
+}
+
+#formDadosUser input:focus {
+    transform: translateY(-0.3em);
+    box-shadow: -10px 10px 10px #0000007e;
+}
+
+/* btn enviar dados and page */
+
+#btnEnviarDados {
+    display: block;
+    cursor: pointer;
+    border: none;
+    width: 200px;
+    border-radius: 4px;
+    padding: 5px 10px;
+    transition: .5s;
+    margin: 2% auto;
+}
+
+#btnEnviarDados:hover {
+    background-color: #032D6B;
+    color: white;
+}
+
+
+/* profress */ 
+
+#progress {
+    background-color: #0000001f;
+    color: aliceblue;
+    display: none;
+    width: 100%;
+    text-align: left;
+    line-height: 2em;
+    font-size: 20px;
+    padding: 20px;
+    margin: auto;
+}
+
+/* mensagem de sucesso  */
+
+#msgSucesso {
+    background-color: #00c000;
+    color: white;
+    display: none;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 2px;
+}
+
+#msgSucesso button {
+    padding: 3px;
+}
+
+#btnEditar {
+    padding: 2px 4px;
+}
+
+/* lado a lado input numbers */
+
+.justifyLeft {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.justifyLeft input {
+    max-width: 140px;
+}
+
+.justifyLeft div {
+    display: block;
+    margin: 0 5px;
+}
+
+/*  rodapé - footer  */
+
+footer {
+    background-color: #242424;
+    text-align: center;
+    padding: 10px;
+}
+
+footer a {
+    color: #6c0de9;
+    text-decoration: none;
+}
+
+
+
+/* responsividade  */
+
+@media screen and (max-width: 400px) {
+    input {
+        display: block;
+        width: 100%;
+    }
+
+    #formDadosUser {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    
+    }
+}
